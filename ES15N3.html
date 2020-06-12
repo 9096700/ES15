@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type='module'>
+        import statistics,{score as sc}from './ES15N3.js';
+        let failscore = statistics(sc,'fail');
+        let passscore = statistics(sc);
+        console.log('及格课程如下:');
+        console.log(...passscore);
+        console.log('不及格课程如下:');
+        console.log(...failscore);
+    </script>
+</body>
+</html>
